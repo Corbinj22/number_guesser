@@ -74,17 +74,30 @@ header{
   padding: 5px;
   height: 40%;
   color: #6e6e6e;
+  display: flex;
+  text-align: center;
+}
+.latest-guess h3 {
+  align-self: flex-start;
+  flex-basis: 100%;
+}
+.latest-guess h1 {
+}
+.guesses {
+  flex-direction: row;
 }
 .challenger1 {
   padding-top: 3px;
-  float:left;
+  /* float:left; */
   border-right: 2px #d0d2d3 solid;
   width: 48%;
+?
 }
 .challenger2 {
   padding-top: 3px;
   width: 48%;
-  float:right;
+  ?
+  /* float:right; */
 }
 /* container right */
 #column-right{
