@@ -43,11 +43,32 @@ header{
 }
 /* container left */
 #column-left{
+  display:flex;
   background-color: #f7f7f7;
   width: 50vw;
   height: 100vh;
 }
-/* container right */
+#challenger-box{
+  border:1px black solid;
+  width: 100%;
+  height: 70%;
+}
+/* Challenger box */
+#challenger-box label{
+  font-size: 100%;
+  display: block;
+}
+#challenger-box p{
+  font-size:100%;
+}
+.challenger-name{
+  float: left;
+  width: 50%;
+}
+.guess{
+  float: left;
+  width: 50%;
+}
 #column-right{
   background-color: #d0d2d3;
   width: 50vw;
