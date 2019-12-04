@@ -46,6 +46,45 @@ header{
   background-color: #f7f7f7;
   width: 50vw;
   height: 100vh;
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#column-left button {
+  color: #ffffff;
+  background-color: #d0d2d3;
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 2px 10px 2px 10px;
+}
+.set-range {
+  width: 94%;
+  /* border: 1px black solid; */
+  background-color: #fff;
+  margin: 10px;
+  padding: 5px;
+  height: 20%;
+  color: #6e6e6e;
+}
+.latest-guess {
+  width: 94%;
+  /* border: 1px black solid; */
+  background-color: #fff;
+  margin: 10px;
+  padding: 5px;
+  height: 40%;
+  color: #6e6e6e;
+}
+.challenger1 {
+  padding-top: 3px;
+  float:left;
+  border-right: 2px #d0d2d3 solid;
+  width: 48%;
+}
+.challenger2 {
+  padding-top: 3px;
+  width: 48%;
+  float:right;
 }
 /* container right */
 #column-right{
