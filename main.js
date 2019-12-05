@@ -1,5 +1,6 @@
 var inputField = document.querySelector("#min");
-var updateButton = document.querySelector(".update");
+var inputField = document.querySelector("#max");
+var updateButton = document.querySelector("#updateButton");
 
 updateButton.disabled = true;
 inputField.addEventListener("input", toggle);
