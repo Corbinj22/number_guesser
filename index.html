@@ -4,11 +4,11 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 <title>Number Guesser</title>
-  <header>
-    <div id="header-main">
-      <h1>Number</h1>
-      <h1 id="header_downsize">Guesser</h1>
-    </div>
+<header>
+  <div id="header-main">
+    <h1>NUMBER</h1>
+    <h1 id="header_downsize">GUESSER</h1>
+  </div>
   <hr class="header-line">
   <p id="title-description">ULTIMATE CHALLENGER EDITION</p>
   <hr class="header-line">
@@ -16,40 +16,40 @@
 </head>
 <body>
   <div id="main-container">
+  <div class="set-range">
+    <h3>Set Range</h3>
+    <label for="">Min Range</label>
+    <input type="text" id="min" name="" value=""></input>
+    <label for="">Max Range</label>
+    <input type="text" name="" value=""></input>
+    <button type="button" class="update" name="button">Update</button>
+  </div>
     <section id="column-left">
-
-      <div id="challenger-box">
+      <div id="mid-challenger-box">
         <p>The Current Range _ to _</p>
         <h3>Challenger 1</h3>
-        <div class="challenger-name">
+        <div class="mid-challenger-name">
           <label>Name</label>
           <input type="text"></input>
         </div>
-        <div class="challenger-guess">
+        <div class="mid-challenger-guess">
           <label>Guess</label>
           <input type="text"></input>
         </div>
         <h3>Challenger 2</h3>
-        <div class="challenger-name">
+        <div class="mid-challenger-name">
           <label>Name</label>
           <input type="text"></input>
         </div>
-        <div class="challenger-guess">
+        <div class="mid-challenger-guess">
           <label>Guess</label>
           <input type="text"></input>
         </div>
-        <button>Submit Guess</button>
-        <button>Reset Game</button>
-        <button>Clear Form</button>
+        <div id=mid-challenger-buttons-box>
+          <button class="mid-challenger-buttons">Submit Guess</button>
+          <button class="mid-challenger-buttons">Reset Game</button>
+          <button class="mid-challenger-buttons">Clear Form</button>
         </div>
-
-      <div class="set-range">
-        <h3>Set Range</h3>
-        <label for="">Min Range</label>
-        <input type="text" id="min" name="" value=""></input>
-        <label for="">Max Range</label>
-        <input type="text" name="" value=""></input>
-        <button type="button" class="update" name="button">Update</button>
       </div>
       <div class="latest-guess">
         <div class="title">
@@ -69,8 +69,6 @@
               <p>no guesses yet!</p>
             </div>
           </div>
-
-
       </div>
     </section>
     <section id="column-right">
