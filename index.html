@@ -14,68 +14,66 @@
   <hr class="header-line">
 </header>
 </head>
-<body>
-  <div id="main-container">
-  <div class="set-range">
-    <h3>Set Range</h3>
-    <label for="">Min Range</label>
-    <input type="text" id="min" name="" value=""></input>
-    <label for="">Max Range</label>
-    <input type="text" name="" value=""></input>
-    <button type="button" class="update" name="button">Update</button>
-  </div>
-    <section id="column-left">
-
-      <div id="mid-challenger-box">
-        <p>The Current Range _ to _</p>
-        <h3>Challenger 1</h3>
-        <div class="mid-challenger-name">
-          <label>Name</label>
-          <input type="text"></input>
+  <body>
+    <div id="main-container">
+      <section id="column-left">
+        <div id="top-range-box">
+          <h3>Set Range</h3>
+          <label for="">Min Range</label>
+          <input type="text" id="min" name="" value=""></input>
+          <label for="">Max Range</label>
+          <input type="text" name="" value=""></input>
+          <button type="button" class="update" name="button">Update</button>
         </div>
-        <div class="mid-challenger-guess">
-          <label>Guess</label>
-          <input type="text"></input>
-        </div>
-        <h3>Challenger 2</h3>
-        <div class="mid-challenger-name">
-          <label>Name</label>
-          <input type="text"></input>
-        </div>
-        <div class="mid-challenger-guess">
-          <label>Guess</label>
-          <input type="text"></input>
-        </div>
-        <div id=mid-challenger-buttons-box>
-          <button class="mid-challenger-buttons">Submit Guess</button>
-          <button class="mid-challenger-buttons">Reset Game</button>
-          <button class="mid-challenger-buttons">Clear Form</button>
-        </div>
-        <div class="latest-guess">
-          <div class="title">
-            <h3>Latest Guess</h3>
+        <div id="mid-challenger-box">
+          <p>The Current Range _ to _</p>
+          <h3>Challenger 1</h3>
+          <div class="mid-challenger-name">
+            <label>Name</label>
+            <input type="text"></input>
           </div>
+          <div class="mid-challenger-guess">
+            <label>Guess</label>
+            <input type="text"></input>
+          </div>
+          <h3>Challenger 2</h3>
+          <div class="mid-challenger-name">
+            <label>Name</label>
+            <input type="text"></input>
+          </div>
+          <div class="mid-challenger-guess">
+            <label>Guess</label>
+            <input type="text"></input>
+          </div>
+          <div id=mid-challenger-buttons-box>
+            <button class="mid-challenger-buttons">Submit Guess</button>
+            <button class="mid-challenger-buttons">Reset Game</button>
+            <button class="mid-challenger-buttons">Clear Form</button>
+          </div>
+          <div id="bottom-challenger-guess">
+            <div class="title">
+              <h3>Latest Guess</h3>
+            </div>
             <div class="guesses">
-              <div class="challenger1">
+              <div class="challenger-guess-score">
                 <h4>Challenger 1 Name</h4>
                 <p>current guess</p>
                 <h1>XX</h1>
                 <p>no guesses yet!</p>
               </div>
-              <div class="challenger2">
+              <div class="challenger-guess-score">
                 <h4>Challenger 2 Name</h4>
                 <p>current guess</p>
                 <h1>XX</h1>
                 <p>no guesses yet!</p>
               </div>
             </div>
-        </div>
-
-    </section>
-    <section id="column-right">
-    </section>
-
-  </div>
-  <script type="text/javascript" src="main.js"></script>
-</body>
+          </div>
+      </div>
+      </section>
+      <section id="column-right">
+      </section>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
