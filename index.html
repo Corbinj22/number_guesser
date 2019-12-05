@@ -17,7 +17,7 @@
   <body>
     <div id="main-container">
       <section id="column-left">
-        <div class="set-range">
+        <div id="top-range-box">
           <h3>Set Range</h3>
           <label for="">Min Range</label>
           <input type="text" id="min" name="" value=""></input>
@@ -39,37 +39,35 @@
           <h3>Challenger 2</h3>
           <div class="mid-challenger-name">
             <label>Name</label>
-            <input id="name2"type="text"></input>
+            <input type="text"></input>
           </div>
           <div class="mid-challenger-guess">
             <label>Guess</label>
-            <input id="guess2" type="text"></input>
+            <input type="text"></input>
           </div>
           <div id=mid-challenger-buttons-box>
-            <button type="button" disabled="disabled" id="submit" class="mid-challenger-buttons">Submit Guess</button>
-            <button id="reset" type="button" disabled="disabled" class="mid-challenger-buttons">Reset Game</button>
-            <button id="clear" type="button" disabled="disabled" class="mid-challenger-buttons">Clear Form</button>
+            <button class="mid-challenger-buttons">Submit Guess</button>
+            <button class="mid-challenger-buttons">Reset Game</button>
+            <button class="mid-challenger-buttons">Clear Form</button>
           </div>
-          <div class="latest-guess">
-            <div class="title">
-              <h3>Latest Guess</h3>
+        </div>
+        <div id="bottom-challenger-guess">
+          <h3>Latest Guess</h3>
+          <div id="bottom-box-guess-display">
+            <div class="challenger-guess-score">
+              <h4>Challenger 1 Name</h4>
+              <p>current guess</p>
+              <h1>XX</h1>
+              <p>no guesses yet!</p>
             </div>
-            <div class="guesses">
-              <div class="challenger1">
-                <h4>Challenger 1 Name</h4>
-                <p>current guess</p>
-                <h1>XX</h1>
-                <p>no guesses yet!</p>
-              </div>
-              <div class="challenger2">
-                <h4>Challenger 2 Name</h4>
-                <p>current guess</p>
-                <h1>XX</h1>
-                <p>no guesses yet!</p>
-              </div>
+            <div class="challenger-guess-score">
+              <h4>Challenger 2 Name</h4>
+              <p>current guess</p>
+              <h1>XX</h1>
+              <p>no guesses yet!</p>
             </div>
           </div>
-      </div>
+        </div>
       </section>
       <section id="column-right">
       </section>
