@@ -82,11 +82,38 @@ button:disabled:hover {
 }
 #top-range-box button {
   color: #ffffff;
+
+  background-color: #6e6e6e;
+  border-radius: 13px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px 10px 5px 10px;
+}
+#min-input-box{
+width: 40%;
+display:inline-block;
+}
+#max-input-box{
+width: 40%;
+display:inline-block;
+}
+#top-range-box input{
+  width: 90%;
+  height: 40px;
+}
+button:hover {
+  background-color: #dd1792;
+}
+button[disabled] {
+background-color: #d0d2d3;
+}
+
   background-color: #d0d2d3;
   border-radius: 10px;
   font-weight: bolder;
   padding: 2px 10px 2px 10px;
 }
+
 
 
 /* mid-challanger-box */
@@ -158,14 +185,33 @@ button:disabled:hover {
   width: 48%;
   align-self: flex-end;
   float:right;
+
+}
+#challenger-border{
+  border-left:2px solid grey;
+}
+
   #challange
 } */
 /* #submit[disabled]{
   background-color: #d0d2d3;
 } */
+
 /* container right */
 #column-right{
   background-color: #d0d2d3;
   width: 50vw;
   height: 100vh;
 }
+
+
+/* #min-input-box{
+  width: 40%;
+display:inline-block;
+border:solid;
+}
+#max-input-box{
+  width: 40%;
+display:inline-block;
+border:solid;
+} */
