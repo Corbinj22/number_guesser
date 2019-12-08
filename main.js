@@ -62,12 +62,8 @@ function submitGuesses(){
 
 // display player name and guess
   function showPlayerGuess() {
-    document.getElementById('player-1-guess-display').innerText =
-    document.getElementById('challenger1Guess').value;
-    document.getElementById('player-2-guess-display').innerText =
-    document.getElementById('challenger2Guess').value;
-    document.getElementById('player-1-name-display').innerText =
-    document.getElementById('challenger1Name').value;
-    document.getElementById('player-2-name-display').innerText =
-    document.getElementById('challenger2Name').value;
+    document.getElementById('player-1-guess-display').innerText = challenger1Guess.value;
+    document.getElementById('player-2-guess-display').innerText = challenger2Guess.value;
+    document.getElementById('player-1-name-display').innerText = challenger1Name.value;
+    document.getElementById('player-2-name-display').innerText = challenger2Name.value;
   }
