@@ -23,32 +23,32 @@
           <input type="text" id="min" name="" value=""></input>
           <label for="">Max Range</label>
           <input type="text" id="max" name="" value=""></input>
-          <button type="button" id="updateButton" name="button">Update</button>
+          <button disabled type="button" id="updateButton" name="button">Update</button>
         </div>
         <div id="mid-challenger-box">
           <p>The Current Range _ to _</p>
           <h3>Challenger 1</h3>
           <div class="mid-challenger-name">
             <label>Name</label>
-            <input id="name1" type="text"></input>
+            <input id="challenger1Name" type="text"></input>
           </div>
           <div class="mid-challenger-guess">
             <label >Guess</label>
-            <input id="guess1" type="text"></input>
+            <input id="challenger1Guess" type="text"></input>
           </div>
           <h3>Challenger 2</h3>
           <div class="mid-challenger-name">
             <label>Name</label>
-            <input type="text"></input>
+            <input id="challenger2Name" type="text"></input>
           </div>
           <div class="mid-challenger-guess">
             <label>Guess</label>
-            <input type="text"></input>
+            <input id="challenger2Guess" type="text"></input>
           </div>
           <div id=mid-challenger-buttons-box>
-            <button class="mid-challenger-buttons">Submit Guess</button>
-            <button class="mid-challenger-buttons">Reset Game</button>
-            <button class="mid-challenger-buttons">Clear Form</button>
+            <button id="submit" disabled type="submit" class="mid-challenger-buttons">Submit Guess</button>
+            <button id="reset" disabled type="button" class="mid-challenger-buttons">Reset Game</button>
+            <button id="clear" disabled type="button" class="mid-challenger-buttons">Clear Form</button>
           </div>
         </div>
         <div id="bottom-challenger-guess">
