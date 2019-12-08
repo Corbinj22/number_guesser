@@ -10,10 +10,10 @@
 //   updateButton.disabled = inputField.value != '' ? false : true;
 // }
 
+// Mid-Challenger-box - Challenger1
 var submitEnabled = false;
 var clearEnabled = false;
 
-// Mid-Challenger-box - Challenger1
 var challenger1Name = document.querySelector('#challenger1Name');
 var challenger1Guess = document.querySelector('#challenger1Guess');
 var challenger2Name = document.querySelector('#challenger2Name');
@@ -31,6 +31,7 @@ submitButton.addEventListener('click', submitGuesses);
 clearButton.addEventListener('click', clearGuesses);
 
 function validateInputs(){
+  console.log('asd');
   submitEnabled = (challenger1Name.value
     && challenger1Guess.value
     && challenger2Name.value
@@ -52,25 +53,21 @@ function clearGuesses(){
   challenger2Guess.value = '';
   validateInputs();
 }
-
+function submitGuesses(){
+  showPlayerGuess();
+  challenger1Guess.value = '';
+  challenger2Guess.value = '';
+  validateInputs();
+}
 
 // display player name and guess
   function showPlayerGuess() {
     document.getElementById('player-1-guess-display').innerText =
-    document.getElementById('guess1').value;
+    document.getElementById('challenger1Guess').value;
     document.getElementById('player-2-guess-display').innerText =
-    document.getElementById('guess2').value;
+    document.getElementById('challenger2Guess').value;
     document.getElementById('player-1-name-display').innerText =
-    document.getElementById('player-name1').value;
+    document.getElementById('challenger1Name').value;
     document.getElementById('player-2-name-display').innerText =
-    document.getElementById('player-name2').value;
-    document.getElementById('guess1').value='';
-    document.getElementById('guess2').value='';
-    document.getElementById('player-name1').value='';
-    document.getElementById('player-name2').value='';
-
-function submitGuesses(){
-  challenger1Guess.value = '';
-  challenger2Guess.value = '';
-
-}
+    document.getElementById('challenger2Name').value;
+  }
