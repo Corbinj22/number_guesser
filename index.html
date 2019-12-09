@@ -21,11 +21,11 @@
           <h3>Set Range</h3>
           <div id="min-input-box">
             <label for="">Min Range</label>
-            <input type="text" id="min" name="" value=""></input>
+            <input type="number" id="min" name="" value=""></input>
           </div>
           <div id="max-input-box">
             <label for="">Max Range</label>
-            <input type="text" id="max" name="" value=""></input>
+            <input type="number" id="max" name="" value=""></input>
             <button disabled type="button" class="updateButton">Update</button>
           </div>
         </div>
@@ -39,7 +39,7 @@
           </div>
           <div class="mid-challenger-guess">
             <label >Guess</label>
-            <input id="challenger1Guess" type="text"></input>
+            <input id="challenger1Guess" type="number"></input>
 
           </div>
           <h3>Challenger 2</h3>
@@ -50,7 +50,7 @@
           </div>
           <div class="mid-challenger-guess">
             <label>Guess</label>
-            <input id="challenger2Guess" type="text"></input>
+            <input id="challenger2Guess" type="number"></input>
           </div>
           <div id=mid-challenger-buttons-box>
             <button id="submit" disabled type="submit" class="mid-challenger-buttons">Submit Guess</button>
@@ -65,13 +65,13 @@
               <h4 id="player-1-name-display">Challenger 1 Name</h4>
               <p>current guess</p>
               <h1 id="player-1-guess-display">xx</h1>
-              <p>no guesses yet!</p>
+              <p id="player-1-guess-success">no guesses yet!</p>
             </div>
             <div id=challenger-border class="challenger-guess-score">
               <h4 id="player-2-name-display">Challenger 2 Name</h4>
               <p>current guess</p>
               <h1 id="player-2-guess-display">xx</h1>
-              <p>no guesses yet!</p>
+              <p id="player-2-guess-success">no guesses yet!</p>
             </div>
           </div>
         </div>
