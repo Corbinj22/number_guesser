@@ -124,8 +124,8 @@ background-color: #d0d2d3;
 }
 .mid-challenger-buttons{
   color: #ffffff;
-  background-color: #d0d2d3;
-  border-radius: 13px;
+  background-color: #6e6e6e;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 110%;
   height: 30px;
@@ -161,6 +161,10 @@ background-color: #d0d2d3;
   width: 48%;
   align-self: flex-end;
   float:right;
+  #challange
+} */
+#submit.disabled{
+  background-color: #d0d2d3;
 }
 #challenger-border{
   border-left:2px solid grey;
