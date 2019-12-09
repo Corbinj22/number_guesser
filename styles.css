@@ -115,6 +115,16 @@ button:disabled:hover {
   font-size: 100%;
   padding: 1% 2% 1% 2%;
 }
+#minDisplay {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #6e6e6e;
+}
+#maxDisplay {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #6e6e6e
+}
 .mid-challenger-name{
   float: left;
   width: 60%;
