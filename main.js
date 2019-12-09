@@ -15,20 +15,22 @@ var submitEnabled = false;
 var clearEnabled = false;
 var updateEnabled = false;
 
-var minRange = document.querySelector('#min');
-var maxRange = document.querySelector('#max');
+var minRangeInput = document.querySelector('#min');
+var maxRangeInput = document.querySelector('#max');
 var challenger1Name = document.querySelector('#challenger1Name');
 var challenger1Guess = document.querySelector('#challenger1Guess');
 var challenger2Name = document.querySelector('#challenger2Name');
 var challenger2Guess = document.querySelector('#challenger2Guess');
+var minRangeDisplay = document.querySelector('#minDisplay');
+var maxRangeDisplay = document.querySelector('#maxDisplay');
 
 var updateButton = document.querySelector('.updateButton');
 var submitButton = document.querySelector('#submit');
 var resetButton = document.querySelector('#reset');
 var clearButton = document.querySelector('#clear');
 
-minRange.addEventListener('input', validateRange);
-maxRange.addEventListener('input', validateRange);
+minRangeInput.addEventListener('input', validateRange);
+maxRangeInput.addEventListener('input', validateRange);
 challenger1Name.addEventListener('input', validateInputs);
 challenger1Guess.addEventListener('input', validateInputs);
 challenger2Name.addEventListener('input', validateInputs);
@@ -36,6 +38,7 @@ challenger2Guess.addEventListener('input', validateInputs);
 
 submitButton.addEventListener('click', submitGuesses);
 clearButton.addEventListener('click', clearGuesses);
+updateButton.addEventListener('click', setCurrentRange);
 
 function validateInputs(){
   submitEnabled = (challenger1Name.value
@@ -53,7 +56,7 @@ function validateInputs(){
 }
 
 function validateRange() {
-  updateEnabled = (minRange.value && maxRange.value)  ? true : false;
+  updateEnabled = (minRangeInput.value && maxRangeInput.value)  ? true : false;
   updateButton.disabled = updateEnabled ? '' : 'disabled';
 }
 
@@ -70,6 +73,12 @@ function submitGuesses(){
   challenger2Guess.value = '';
   validateInputs();
 }
+
+function setCurrentRange() {
+  minRangeDisplay.innerText = minRangeInput.value;
+  maxRangeDisplay.innerText = maxRangeInput.value;
+}
+
 
 // display player name and guess
   function showPlayerGuess() {
