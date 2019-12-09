@@ -23,6 +23,9 @@ var challenger2Guess = document.querySelector('#challenger2Guess');
 var minRangeDisplay = document.querySelector('#minDisplay');
 var maxRangeDisplay = document.querySelector('#maxDisplay');
 
+//set range box update button
+var updateButton = document.querySelector('.updateButton');
+
 //mid box buttons
 var submitButton = document.querySelector('#submit');
 var resetButton = document.querySelector('#reset');
