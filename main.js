@@ -1,19 +1,8 @@
-// Set Range Box
-// var minRange = document.querySelector('#min');
-// var maxRange = document.querySelector('#max');
-// var updateButton = document.querySelector('#updateButton');
-//
-// updateButton.disabled = true;
-// inputField.addEventListener('input', toggle);
-//
-// function toggle() {
-//   updateButton.disabled = inputField.value != '' ? false : true;
-// }
 
-// Mid-Challenger-box - Challenger1
 var submitEnabled = false;
 var clearEnabled = false;
 var updateEnabled = false;
+var correctGuess = '🐰';
 
 var minRangeInput = document.querySelector('#min');
 var maxRangeInput = document.querySelector('#max');
@@ -68,7 +57,10 @@ function clearGuesses(){
   validateInputs();
 }
 function submitGuesses(){
-  showPlayerGuess();
+  generateCorrectGuess();
+  // check if they got it right
+  showPlayerGuess(); //extend to update "no guesses yet"
+
   challenger1Guess.value = '';
   challenger2Guess.value = '';
   validateInputs();
@@ -78,12 +70,20 @@ function setCurrentRange() {
   minRangeDisplay.innerText = minRangeInput.value;
   maxRangeDisplay.innerText = maxRangeInput.value;
 }
+function generateCorrectGuess() {
+  correctGuess = 50;
+  //math.random thing
+}
 
 
 // display player name and guess
   function showPlayerGuess() {
-    document.getElementById('player-1-guess-display').innerText = challenger1Guess.value;
-    document.getElementById('player-2-guess-display').innerText = challenger2Guess.value;
+    var guess1 = challenger1Guess.value;
+    var guess2 = challenger2Guess.value;
+    document.getElementById('player-1-guess-display').innerText = guess1;
+    document.getElementById('player-2-guess-display').innerText = guess2;
     document.getElementById('player-1-name-display').innerText = challenger1Name.value;
     document.getElementById('player-2-name-display').innerText = challenger2Name.value;
+    document.getElementById('player-1-guess-success').innerText = guess1 === `${correctGuess}` ? 'yes' : 'no';
+    document.getElementById('player-2-guess-success').innerText = guess2 === `${correctGuess}` ? 'yes' : 'no';
   }
