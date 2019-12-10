@@ -188,4 +188,15 @@ display:inline-block;
   background-color: #D0D2D3;
   width: 50vw;
   height: 100vh;
+  box-sizing: border-box;
+}
+.winnerCard {
+  background-color: #fff;
+  width: 95%;
+  margin: 2%;
+  padding-bottom: 2%;
+
+}
+.winnerCard h4 {
+  display: inline-block;
 }
