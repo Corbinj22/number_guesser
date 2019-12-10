@@ -28,6 +28,9 @@ var submitButton = document.querySelector('#submit');
 var resetButton = document.querySelector('#reset');
 var clearButton = document.querySelector('#clear');
 
+//lowerbox
+var guess1Sucess = document.querySelector('#player-1-guess-success');
+
 //event listeners
 //set range box input listeners
 minRangeInput.addEventListener('input', validateRange);
@@ -77,9 +80,10 @@ function clearGuesses(){
 //mid box guesses functionality
 function submitGuesses(){
   showPlayerGuess(); //extend to update "no guesses yet"
+  validateInputs();
+  populateGuessResponses();
   challenger1Guess.value = '';
   challenger2Guess.value = '';
-  validateInputs();
 }
 
 //set range update functionality
@@ -103,13 +107,26 @@ function generateNumberToGuess() {
     document.getElementById('player-2-guess-display').innerText = guess2;
     document.getElementById('player-1-name-display').innerText = challenger1Name.value;
     document.getElementById('player-2-name-display').innerText = challenger2Name.value;
-    document.getElementById('player-1-guess-success').innerText = guess1 === `${correctGuess}` ? '' : 'no';
-    document.getElementById('player-2-guess-success').innerText = guess2 === `${correctGuess}` ? 'yes' : 'no';
+    // document.getElementById('player-1-guess-success').innerText = guess1 === `${correctGuess}` ? '' : 'no';
+    // document.getElementById('player-2-guess-success').innerText = guess2 === `${correctGuess}` ? 'yes' : 'no';
   }
-  
+
 // compare user input to generated NUMBER
 function storeMinMaxRange(){
   min = parseInt(minRangeInput.value);
   max = parseInt(maxRangeInput.value);
   generateNumberToGuess(min, max);
 }
+//generate lower box <p> tags with responses
+function populateGuessResponses() {
+  console.log(guess1Sucess.value);
+  if (challenger1Guess.value == correctGuess) {
+    guess1Sucess.innerText = "BOOM!";
+    }
+    else if (challenger1Guess > correctGuess) {
+    guess1Sucess.innerText = "That's too high";
+    }
+    else if (challenger1Guess < correctGuess) {
+    guess1Sucess.innerText = "That's too low";
+    }
+  }
