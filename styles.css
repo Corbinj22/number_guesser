@@ -1,15 +1,15 @@
 /* Global */
 *{
-  padding:0px;
   margin:0px;
   box-sizing: border-box;
+  padding:0px;
   font-family: ‘Open Sans’, sans-serif;
 }
 h1{
-  color:#dd1972;
   display:inline;
-  text-align: center;
+  color:#dd1972;
   font-size:350%;
+  text-align: center;
 }
 #main-container{
   display:flex;
@@ -30,25 +30,25 @@ header{
 .header-line{
   display: inline-block;
   width: 70px;
-  color: white;
   margin-bottom: 5px;
+  color: white;
 }
 #title-description{
+  display: inline-block;
   color: white;
   font-size: 20px;
   text-align: center;
-  display: inline-block;
   }
 .mid-challenger-buttons{
-  color: #FFFFFF;
-  background-color: #6E6E6E;
   border-radius: 10px;
+  padding: 0 1% 0 1%;
+  height: 30px;
+  color: #FFFFFF;
+  margin-top: 3%;
+  width: 31%;
+  background-color: #6E6E6E;
   font-weight: bold;
   font-size: 110%;
-  height: 30px;
-  width: 31%;
-  padding: 0 1% 0 1%;
-  margin-top: 3%;
 }
 button:disabled {
   background-color: #D0D2D3;
@@ -63,69 +63,73 @@ button:disabled:hover {
 }
 /* container left */
 #column-left{
+  flex-direction: column;
   display:flex;
-  background-color: #F7F7F7;
   width: 50vw;
   height: 100vh;
-  flex-direction: column;
+  background-color: #F7F7F7;
 }
 /* Set Range Box */
 #top-range-box {
-  width: 95%;
-  background-color: #fff;
   margin: 2%;
-  height: 13%;
-  color: #6E6E6E;
+  width: 95%;
+  height: 95px;
   padding-left: 2%;
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+  color: #6E6E6E;
 }
 #min-input-box{
+  display:inline-block;
   width: 40%;
-display:inline-block;
 }
 #max-input-box{
-  width: 35%;
   display: inline-block;
+  width: 35%;
 }
 #top-range-box input{
   width: 95%;
   height: 30px;
 }
-#updateButton {
-  color: #FFFFFF;
-  background-color: #6E6E6E;
-  height: 25%;
-  width: 20%;
-  border-radius: 10px;
-  font-weight: bolder;
-  padding: 2px 10px 2px 10px;
+#updateButton{
   display: inline-block;
+  height: 30px;
+  width: 100px;
+  border-radius: 13px;
+  padding: 2px 10px 4px 10px;
+  background-color: #6E6E6E;
+  color: #FFFFFF;
+  font-weight: bolder;
 }
 /* mid-challanger-box */
 #mid-challenger-box{
-  width: 95%;
-  background-color: white;
-  margin: 2%;
-  padding-bottom: 2%;
-  height: 32%;
   clear: both;
+  width: 95%;
+  height: 32%;
+  margin: 2%;
+  border: 1px solid #f2f2f2;
+  padding-bottom: 2%;
+  background-color: white;
 }
 #mid-challenger-box label{
-  font-size: 100%;
   display: block;
+  font-size: 100%;
+  color:#808080;
 }
 #mid-challenger-box h3{
-  font-size: 120%;
   padding-left: 2%;
   text-align: left;
-  color: grey;
+  font-size: 120%;
+  color: #5f5e5e;
 }
 #mid-challenger-box input{
-  width: 100%;
   height: 30px;
+  width: 100%;
+  border: 1px solid #f2f2f2;
 }
 #mid-challenger-box p{
-  font-size: 100%;
   padding: 1% 2% 1% 2%;
+  font-size: 100%;
 }
 #minDisplay {
   font-weight: bolder;
@@ -154,16 +158,18 @@ display:inline-block;
 /* Latest Guess box */
 #bottom-challenger-guess {
   width: 95%;
-  background-color: white;
   margin: 2%;
-  padding-bottom: 2%;
   height: 25%;
-  color: grey;
+  padding-bottom: 2%;
   text-align: center;
+  border: 1px solid #f2f2f2;
+  background-color: white;
+  color: grey;
 }
 #bottom-challenger-guess h3{
-  text-align: left;
   padding-left: 2%;
+  text-align: left;
+  color: #5f5e5e;
 }
 #bottom-box-guess-display {
   display: flex;
@@ -175,23 +181,22 @@ display:inline-block;
   height: 70%;
 }
 .challenger-guess-score {
-  padding-top: 3px;
-  width: 48%;
   align-self: flex-end;
   float:right;
+  padding-top: 3px;
+  width: 48%;
 }
 #challenger-border{
-  border-left:2px solid grey;
+  border-left:2px solid #c7c7c7;
 }
 /* container right */
 #column-right{
-  background-color: #D0D2D3;
   width: 50vw;
   height: 100vh;
   box-sizing: border-box;
+  background-color: #D0D2D3;
 }
 .winnerCard {
-  background-color: #fff;
   width: 95%;
   margin: 2%;
   padding-bottom: 2%;
