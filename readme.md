@@ -7,13 +7,15 @@ This project was created by Justin Corbin and Kimala Cochran.
 
 ### Comp Recreation
 
-This was the provided comp:
+These were the provided comps:
 
-![Number Guesser zero state](https://imgur.com/LITG1cZ)
+![Number Guesser zero state](images/zero-state.jpg)
+Number Guesser zero state
 
-![Number Guesser zero state with winner cards](https://imgur.com/DugJAu7)
 
+![Number Guesser zero state with winner cards](images/winner-cards.jpg)
+Number Guesser with winner cards
 
-and this was our result:
+And this was our result:
 
-![Number Guesser Final product](https://imgur.com/Zxo7RYp)
+![Number Guesser comp recreation](images/compRecreation.png)
