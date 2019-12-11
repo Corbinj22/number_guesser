@@ -38,6 +38,8 @@ header{
   font-size: 20px;
   text-align: center;
   display: inline-block;
+  font-weight: lighter;
+  padding-bottom: 5px;
   }
 .mid-challenger-buttons{
   color: #FFFFFF;
@@ -77,6 +79,7 @@ button:disabled:hover {
   height: 13%;
   color: #6E6E6E;
   padding-left: 2%;
+  margin-top: 2%;
 }
 #min-input-box{
   width: 40%;
@@ -241,5 +244,4 @@ button:disabled:hover {
 .winnerCard hr {
   width: 80%;
   margin: 0 10% 0 10%;
-  color: #D0D2D3;
 }
