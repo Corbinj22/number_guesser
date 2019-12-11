@@ -20,7 +20,7 @@ header{
   text-align: center;
 }
 #header_downsize{
-  font-weight: normal;
+  font-weight: lighter;
 }
 #header-main{
   display: inline-block;
@@ -80,11 +80,13 @@ button:disabled:hover {
 }
 #min-input-box{
   width: 40%;
-display:inline-block;
+  display:inline-block;
+  font-weight: lighter;
 }
 #max-input-box{
   width: 35%;
   display: inline-block;
+  font-weight: lighter;
 }
 #top-range-box input{
   width: 95%;
@@ -112,12 +114,16 @@ display:inline-block;
 #mid-challenger-box label{
   font-size: 100%;
   display: block;
+  color: #6E6E6E;
+  font-weight: lighter;
+
 }
 #mid-challenger-box h3{
   font-size: 120%;
   padding-left: 2%;
   text-align: left;
   color: grey;
+  font-weight: bold;
 }
 #mid-challenger-box input{
   width: 100%;
@@ -126,6 +132,7 @@ display:inline-block;
 #mid-challenger-box p{
   font-size: 100%;
   padding: 1% 2% 1% 2%;
+  color: #6E6E6E
 }
 #minDisplay {
   font-weight: bolder;
@@ -201,14 +208,16 @@ display:inline-block;
   display: flex;
   text-align: center;
   align-items: center;
+  justify-content: space-evenly;
+  font-size: 10px;
 }
 .challengerVsNames p {
   text-align: center;
 
 }
-
 .winnerStatus p {
   align-self: center;
+  font-weight: lighter;
 }
 .winnerCard h4 {
   display: inline-block;
@@ -220,12 +229,17 @@ display:inline-block;
   text-align: center;
 }
 .winnerCard p {
-  /* display: inline-block; */
   text-align: center;
 }
 .timer {
   display: flex;
+  font-size: 12px;
 }
 .timer p {
-  align-self:flex-end;
+  flex: 2;
+}
+.winnerCard hr {
+  width: 80%;
+  margin: 0 10% 0 10%;
+  color: #D0D2D3;
 }
