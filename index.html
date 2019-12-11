@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Number Guesser</title>
     <header>
       <div id="header-main">
@@ -74,24 +74,27 @@
         </div>
       </section>
       <section id="column-right">
-        <div class="winnerCard">
-          <div class="challengerVsNames">
-            <h4>Challenger 1 Name</h4>
-            <p>vs</p>
-            <h4>Challenger 2 Name</h4>
+        <div id="cardDiv">
+          <div class="winnerCard">
+            <div class="challengerVsNames">
+              <h4>Challenger 1 Name</h4>
+              <p>vs</p>
+              <h4>Challenger 2 Name</h4>
+            </div>
             <hr>
-          </div>
-          <div class="winnerStatus">
-            <h2>CHALLENGER 2 Name</h2>
-            <p>WINNER</p>
-            <hr>
-          </div>
-          <div class="timer">
-            <p># Guesses</p>
-            <p>Time</p>
-            <p>X</p>
+            <div class="winnerStatus">
+              <h2>CHALLENGER Name</h2>
+              <p>WINNER</p>
+              <hr>
+            </div>
+            <div class="timer">
+              <p># Guesses</p>
+              <p>Time</p>
+              <p id="closeWinnerCard">X</p>
+            </div>
           </div>
         </div>
+
       </section>
     </div>
     <script type="text/javascript" src="main.js"></script>
