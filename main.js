@@ -10,6 +10,7 @@ generateNumberToGuess();
 //Set range Min Max inputs
 var minRangeInput = document.querySelector('#min');
 var maxRangeInput = document.querySelector('#max');
+
 //set range box update button
 var updateButton = document.querySelector('#updateButton');
 
@@ -23,12 +24,9 @@ var challenger2Guess = document.querySelector('#challenger2Guess');
 var minRangeDisplay = document.querySelector('#minDisplay');
 var maxRangeDisplay = document.querySelector('#maxDisplay');
 
-//set range box update button
-var updateButton = document.querySelector('#updateButton');
-
 //mid box buttons
 var submitButton = document.querySelector('#submit');
-var resetButton = document.querySelector('#reset');
+// var resetButton = document.querySelector('#reset');
 var clearButton = document.querySelector('#clear');
 
 //lowerbox <p> tags
@@ -53,7 +51,7 @@ clearButton.addEventListener('click', clearGuesses);
 updateButton.addEventListener('click', setCurrentRange);
 
 //mid box validation and clear/select button functionality
-function validateInputs(){
+function validateInputs() {
   submitEnabled = (challenger1Name.value
     && challenger1Guess.value
     && challenger2Name.value
@@ -73,7 +71,7 @@ function validateRange() {
 }
 
 //mid box validation and clear button
-function clearGuesses(){
+function clearGuesses() {
   challenger1Name.value = '';
   challenger2Name.value = '';
   challenger1Guess.value = '';
@@ -82,7 +80,7 @@ function clearGuesses(){
 }
 
 //mid box guesses functionality
-function submitGuesses(){
+function submitGuesses() {
   showPlayerGuess(); //extend to update "no guesses yet"
   validateInputs();
   populateGuessResponses();
@@ -101,7 +99,6 @@ function generateNumberToGuess() {
   var difference = max - min;
   correctGuess = Math.floor(difference * Math.random() + min);
   parseInt(correctGuess);
-  console.log(correctGuess)
 }
 
 // display player name and guess
@@ -115,7 +112,7 @@ function generateNumberToGuess() {
   }
 
 // compare user input to generated NUMBER
-function storeMinMaxRange(){
+function storeMinMaxRange() {
   min = parseInt(minRangeInput.value);
   max = parseInt(maxRangeInput.value);
   generateNumberToGuess(min, max);
@@ -123,22 +120,18 @@ function storeMinMaxRange(){
 //generate lower box <p> tags with responses
 function populateGuessResponses() {
   if (~~challenger1Guess.value == correctGuess) {
-    guess1Sucess.innerText = "BOOM!";
-    }
-    else if (~~challenger1Guess.value > correctGuess) {
-    guess1Sucess.innerText = "That's too high";
-    }
-    else if (~~challenger1Guess.value < correctGuess) {
-    guess1Sucess.innerText = "That's too low";
+    guess1Sucess.innerText = 'BOOM!';
+    } else if (~~challenger1Guess.value > correctGuess) {
+    guess1Sucess.innerText = 'That\'\s too high';
+    } else if (~~challenger1Guess.value < correctGuess) {
+    guess1Sucess.innerText = 'That\'\s too low';
   }
 
   if (~~challenger2Guess.value == correctGuess) {
-    guess2Sucess.innerText = "BOOM!";
-    }
-    else if (~~challenger2Guess.value > correctGuess) {
-    guess2Sucess.innerText = "That's too high";
-    }
-    else if (~~challenger2Guess.value < correctGuess) {
-    guess2Sucess.innerText = "That's too low";
+    guess2Sucess.innerText = 'BOOM!';
+    } else if (~~challenger2Guess.value > correctGuess) {
+    guess2Sucess.innerText = 'That\'\s too high';
+    } else if (~~challenger2Guess.value < correctGuess) {
+    guess2Sucess.innerText = 'That\'\s too low';
     }
   }

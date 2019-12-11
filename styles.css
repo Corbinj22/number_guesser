@@ -200,9 +200,37 @@ button:disabled:hover {
   width: 95%;
   margin: 2%;
   padding-bottom: 2%;
-  background-color: #fff;
+  color: #6E6E6E;
+}
+.challengerVsNames {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.challengerVsNames p {
+  text-align: center;
 
+}
+
+.winnerStatus p {
+  align-self: center;
 }
 .winnerCard h4 {
   display: inline-block;
+  margin: 2%;
+  height: 13%;
+  text-align: center;
+}
+.winnerCard h2 {
+  text-align: center;
+}
+.winnerCard p {
+  /* display: inline-block; */
+  text-align: center;
+}
+.timer {
+  display: flex;
+}
+.timer p {
+  align-self:flex-end;
 }
