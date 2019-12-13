@@ -135,11 +135,3 @@ function populateGuessResponses() {
     guess2Sucess.innerText = 'That\'\s too low';
     }
   }
-
-// var closeButton = document.querySelector('#closeWinnerCard');
-//
-// closeButton.addEventListener('click', closeWinner);
-//
-// function closeWinner() {
-//     this.parentNode.remove();
-//   }

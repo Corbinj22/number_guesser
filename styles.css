@@ -5,34 +5,41 @@
   padding:0px;
   font-family: ‘Open Sans’, sans-serif;
 }
+
 h1{
   display:inline;
   color:#dd1972;
   font-size:350%;
   text-align: center;
 }
+
 #main-container{
   display:flex;
 }
+
 /* Header settings*/
 header{
   background-color: #404041;
   text-align: center;
 }
+
 #header_downsize{
   font-weight: lighter;
 }
+
 #header-main{
   display: inline-block;
   width: 100vw;
   text-align: center;
 }
+
 .header-line{
   display: inline-block;
   width: 70px;
   margin-bottom: 5px;
   color: white;
 }
+
 #title-description{
   display: inline-block;
   color: white;
@@ -40,6 +47,7 @@ header{
   text-align: center;
   padding-bottom: 5px;
   }
+
 .mid-challenger-buttons{
   border-radius: 10px;
   padding: 0 1% 0 1%;
@@ -51,17 +59,21 @@ header{
   font-weight: bold;
   font-size: 110%;
 }
+
 button:disabled {
   background-color: #D0D2D3;
 }
+
 button:hover {
   background-color: #DD1792;
   cursor: pointer;
 }
+
 button:disabled:hover {
   background-color: #D0D2D3;
   cursor: not-allowed;
 }
+
 /* container left */
 #column-left{
   flex-direction: column;
@@ -70,6 +82,7 @@ button:disabled:hover {
   height: 100vh;
   background-color: #F7F7F7;
 }
+
 /* Set Range Box */
 #top-range-box {
   margin: 2%;
@@ -80,18 +93,22 @@ button:disabled:hover {
   background-color: #fff;
   color: #6E6E6E;
 }
+
 #min-input-box{
   display:inline-block;
   width: 40%;
 }
+
 #max-input-box{
   display: inline-block;
   width: 35%;
 }
+
 #top-range-box input{
   width: 95%;
   height: 30px;
 }
+
 #updateButton{
   display: inline-block;
   height: 30px;
@@ -102,6 +119,7 @@ button:disabled:hover {
   color: #FFFFFF;
   font-weight: bolder;
 }
+
 /* mid-challanger-box */
 #mid-challenger-box{
   clear: both;
@@ -112,51 +130,61 @@ button:disabled:hover {
   padding-bottom: 2%;
   background-color: white;
 }
+
 #mid-challenger-box label{
   display: block;
   font-size: 100%;
   font-weight: lighter;
   color:#808080;
 }
+
 #mid-challenger-box h3{
   padding-left: 2%;
   text-align: left;
   color: grey;
   font-weight: bold;
 }
+
 #mid-challenger-box input{
   height: 30px;
   width: 100%;
   border: 1px solid #f2f2f2;
 }
+
 #mid-challenger-box p{
   padding: 1% 2% 1% 2%;
   color: #6E6E6E
 }
+
 #minDisplay {
   font-weight: bolder;
   text-decoration: underline;
   color: #6E6E6E;
 }
+
 #maxDisplay {
   font-weight: bolder;
   text-decoration: underline;
   color: #6E6E6E
 }
+
 .mid-challenger-name{
   float: left;
   width: 60%;
   padding: 0% 2%;
 }
+
 .mid-challenger-guess{
   float: left;
   width: 40%;
   padding-right: 2%;
 }
+
 #mid-challenger-buttons-box{
   width:100%;
   text-align: center;
 }
+
 /* Latest Guess box */
 #bottom-challenger-guess {
   width: 95%;
@@ -168,29 +196,35 @@ button:disabled:hover {
   background-color: white;
   color: grey;
 }
+
 #bottom-challenger-guess h3{
   padding-left: 2%;
   text-align: left;
   color: #5f5e5e;
 }
+
 #bottom-box-guess-display {
   display: flex;
   flex-direction: row;
 }
+
 #challenger-box{
   border:1px black solid;
   width: 100%;
   height: 70%;
 }
+
 .challenger-guess-score {
   align-self: flex-end;
   float:right;
   padding-top: 3px;
   width: 48%;
 }
+
 #challenger-border{
   border-left:2px solid #c7c7c7;
 }
+
 /* container right */
 #column-right{
   width: 50vw;
@@ -198,6 +232,7 @@ button:disabled:hover {
   box-sizing: border-box;
   background-color: #D0D2D3;
 }
+
 .winnerCard {
   width: 95%;
   margin: 2%;
@@ -205,6 +240,7 @@ button:disabled:hover {
   color: #6E6E6E;
   background-color: white;
 }
+
 .challengerVsNames {
   display: flex;
   text-align: center;
@@ -212,33 +248,40 @@ button:disabled:hover {
   justify-content: space-evenly;
   font-size: 10px;
 }
+
 .challengerVsNames p {
   text-align: center;
-
 }
+
 .winnerStatus p {
   align-self: center;
   font-weight: lighter;
 }
+
 .winnerCard h4 {
   display: inline-block;
   margin: 2%;
   height: 13%;
   text-align: center;
 }
+
 .winnerCard h2 {
   text-align: center;
 }
+
 .winnerCard p {
   text-align: center;
 }
+
 .timer {
   display: flex;
   font-size: 12px;
 }
+
 .timer p {
   flex: 2;
 }
+
 .winnerCard hr {
   width: 80%;
   margin: 0 10% 0 10%;
